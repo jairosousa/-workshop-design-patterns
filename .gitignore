@@ -1,0 +1,23 @@
+# Default ignored files
+
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../:\workspace-cursos\algaworks\desing-patterns\factory-method\desafio-logger\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+
+/factory-method/desafio-logger/.idea
+/factory-method/maladireta/.idea
+/factory-method/maladireta/.idea
+/factory-method/maladireta-cliente/.idea
+/factory-method/maladireta-lib/.idea
+/builder/pedido-venda/.idea/
+/builder/pedido-venda/target/
+
+/factory-method/maladireta/.idea/compiler.xml
+/factory-method/maladireta/.idea/misc.xml
+/builder/pedido-venda/pedido-venda.iml
+/factory-method/desafio-logger/target/
+/factory-method/maladireta-cliente/target/
+/factory-method/maladireta-lib/target/
