@@ -1,23 +1,36 @@
 # Default ignored files
 
-/workspace.xml
-# Datasource local storage ignored files
-/../../../../../../../:\workspace-cursos\algaworks\desing-patterns\factory-method\desafio-logger\.idea/dataSources/
-/dataSources.local.xml
-# Editor-based HTTP Client requests
-/httpRequests/
+workspace.xml
 
-/factory-method/desafio-logger/.idea
-/factory-method/maladireta/.idea
-/factory-method/maladireta/.idea
-/factory-method/maladireta-cliente/.idea
-/factory-method/maladireta-lib/.idea
-/builder/pedido-venda/.idea/
-/builder/pedido-venda/target/
+factory-method/desafio-logger/.idea
+factory-method/maladireta/.idea
+factory-method/maladireta-cliente/.idea
+factory-method/maladireta-lib/.idea
+builder/pedido-venda/.idea/
+builder/pedido-venda/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
 
-/factory-method/maladireta/.idea/compiler.xml
-/factory-method/maladireta/.idea/misc.xml
-/builder/pedido-venda/pedido-venda.iml
-/factory-method/desafio-logger/target/
-/factory-method/maladireta-cliente/target/
-/factory-method/maladireta-lib/target/
+factory-method/maladireta/.idea/compiler.xml
+factory-method/maladireta/.idea/misc.xml
+builder/pedido-venda/pedido-venda.iml
+factory-method/desafio-logger/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+factory-method/maladireta-cliente/target/
+factory-method/maladireta-lib/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+.env
+
+*.ipr
+*.iml
+*.iws
