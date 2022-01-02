@@ -1,5 +1,6 @@
 package com.algaworks.model;
 
+import com.algaworks.model.builder.PedidoDeVendaBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,6 +18,7 @@ public class PedidoVendaTest {
     @Test
     public void deveCalcularValorTotalPedidoParaClienteVip() {
         PedidoVenda pedidoVenda = new PedidoVenda();
+
         Cliente cliente = new Cliente();
         cliente.setNome("João");
         cliente.setVip(true);
@@ -35,9 +37,24 @@ public class PedidoVendaTest {
         List<ItemPedido> itemPedidos = Arrays.asList(item1,item2);
         pedidoVenda.setItensPedidos(itemPedidos);
 
-        Assert.assertEquals(new BigDecimal("576").doubleValue(), pedidoVenda.getValorTotal().doubleValue(), 0.0001);
+        BigDecimal valorTotal = pedidoVenda.getValorTotal();
 
+        Assert.assertEquals(new BigDecimal("576").doubleValue(), valorTotal.doubleValue(), 0.0001);
 
+    }
+
+    @Test
+    public void deveCalcularValorTotalPedidoParaClienteVipComBuilder() {
+        PedidoVenda pedidoVenda = new PedidoDeVendaBuilder()
+                .comClienteVip("João Silva")
+                .comItem("Calculadora", 2, "200")
+                .comItem("Mochila", 1, "200")
+                .comNumero("02366")
+                .construir();
+
+        BigDecimal valorTotal = pedidoVenda.getValorTotal();
+
+        Assert.assertEquals(new BigDecimal("576").doubleValue(), valorTotal.doubleValue(), 0.0001);
     }
 
 }

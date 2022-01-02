@@ -2,7 +2,7 @@ package com.algaworks.model;
 
 /**
  * @Autor Jairo Nascimento
- * @Created 26/12/2021 - 15:23
+ * @Created 02/01/2022 - 11:01
  */
 public class Cliente {
 
@@ -17,11 +17,15 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public Boolean isVip() {
+    public Boolean getVip() {
         return vip;
     }
 
     public void setVip(Boolean vip) {
         this.vip = vip;
+    }
+
+    public Boolean isVip() {
+        return vip;
     }
 }

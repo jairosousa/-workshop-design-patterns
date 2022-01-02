@@ -8,8 +8,11 @@ import java.util.List;
  * @Created 26/12/2021 - 15:22
  */
 public class PedidoVenda {
+
     private String numero;
+
     private Cliente cliente;
+
     private List<ItemPedido> itensPedidos;
 
     public String getNumero() {
@@ -50,4 +53,6 @@ public class PedidoVenda {
         }
         return valorTotal;
     }
+
+
 }
