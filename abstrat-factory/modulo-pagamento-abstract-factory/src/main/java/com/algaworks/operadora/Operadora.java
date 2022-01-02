@@ -10,5 +10,5 @@ public interface Operadora {
 
     void capturar(String cartao, BigDecimal valor) throws CapturaNaoAutorizadaException;
 
-    public Long confirmar();
+    Long confirmar();
 }

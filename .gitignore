@@ -6,6 +6,12 @@ factory-method/desafio-logger/.idea
 factory-method/maladireta/.idea
 factory-method/maladireta-cliente/.idea
 factory-method/maladireta-lib/.idea
+abstrat-factory/desafio/venda-produto/.idea
+abstrat-factory/modulo-pagamento-abstract-factory/.idea
+abstrat-factory/modulo-pagamento-acoplado/.idea
+abstrat-factory/modulo-pagamento-acoplado/target/
+abstrat-factory/modulo-pagamento-abstract-factory/target/
+abstrat-factory/desafio/venda-produto/target/
 builder/pedido-venda/.idea/
 builder/pedido-venda/target/
 pom.xml.tag

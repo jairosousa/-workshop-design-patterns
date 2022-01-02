@@ -1,11 +1,7 @@
 package com.algaworks.pagamento;
 
 import com.algaworks.gestorderisco.AlertaDeRiscoException;
-import com.algaworks.gestorderisco.GestorDeRisco;
-import com.algaworks.gestorderisco.fcontrol.FControl;
 import com.algaworks.operadora.CapturaNaoAutorizadaException;
-import com.algaworks.operadora.Operadora;
-import com.algaworks.operadora.cielo.Cielo;
 import com.algaworks.pagamento.pagseguro.PagSeguroModuloPagamentoFactory;
 import org.junit.Assert;
 import org.junit.Before;
@@ -23,12 +19,12 @@ public class PagamentoViaPagSeguroTest {
 
     @Before
     public void setUp() {
-       ModuloPagamentoFactory moduloPagamentoFactory = new PagSeguroModuloPagamentoFactory();
+        ModuloPagamentoFactory moduloPagamentoFactory = new PagSeguroModuloPagamentoFactory();
         pagamento = new Pagamento(moduloPagamentoFactory);
     }
 
     @Test
-    public void deveAutorizarVanda() throws CapturaNaoAutorizadaException, AlertaDeRiscoException {
+    public void deveAutorizarVenda() throws CapturaNaoAutorizadaException, AlertaDeRiscoException {
         Long codigoAutorizacao = pagamento.autorizar("2222.2222", new BigDecimal("200"));
         Assert.assertNotNull(codigoAutorizacao);
     }
