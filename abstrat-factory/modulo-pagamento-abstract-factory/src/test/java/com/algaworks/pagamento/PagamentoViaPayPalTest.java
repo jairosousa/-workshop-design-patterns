@@ -8,6 +8,7 @@ import com.algaworks.operadora.CapturaNaoAutorizadaException;
 import com.algaworks.operadora.Operadora;
 import com.algaworks.operadora.cielo.Cielo;
 import com.algaworks.operadora.redecard.RedeCard;
+import com.algaworks.pagamento.paypal.PayPalModuloPagamentoFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,9 +25,8 @@ public class PagamentoViaPayPalTest {
 
     @Before
     public void setUp() {
-        Operadora operadora = new RedeCard();
-        GestorDeRisco gestorDeRisco = new ClearSale();
-        pagamento = new Pagamento(operadora, gestorDeRisco);
+        PayPalModuloPagamentoFactory moduloPagamentoFactory = new PayPalModuloPagamentoFactory();
+        pagamento = new Pagamento(moduloPagamentoFactory);
     }
 
     @Test

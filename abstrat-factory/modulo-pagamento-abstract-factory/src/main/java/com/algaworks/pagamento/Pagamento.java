@@ -17,9 +17,9 @@ public class Pagamento {
     private Operadora operadora;
     private GestorDeRisco gestorDeRisco;
 
-    public Pagamento(Operadora operadora, GestorDeRisco gestorDeRisco) {
-        this.operadora = operadora;
-        this.gestorDeRisco = gestorDeRisco;
+    public Pagamento(ModuloPagamentoFactory moduloPagamentoFactory) {
+        this.operadora = moduloPagamentoFactory.criarOperadora();
+        this.gestorDeRisco = moduloPagamentoFactory.criarGestorDeRisco();
     }
 
     public Long autorizar(String cartao, BigDecimal valor) throws CapturaNaoAutorizadaException, AlertaDeRiscoException {

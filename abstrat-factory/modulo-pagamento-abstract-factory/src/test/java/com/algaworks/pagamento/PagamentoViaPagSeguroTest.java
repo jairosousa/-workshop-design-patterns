@@ -6,6 +6,7 @@ import com.algaworks.gestorderisco.fcontrol.FControl;
 import com.algaworks.operadora.CapturaNaoAutorizadaException;
 import com.algaworks.operadora.Operadora;
 import com.algaworks.operadora.cielo.Cielo;
+import com.algaworks.pagamento.pagseguro.PagSeguroModuloPagamentoFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,15 +17,14 @@ import java.math.BigDecimal;
  * @Autor Jairo Nascimento
  * @Created 02/01/2022 - 15:11
  */
-public class PagamentoViaPagSeguro {
+public class PagamentoViaPagSeguroTest {
 
     private Pagamento pagamento;
 
     @Before
     public void setUp() {
-        Operadora operadora = new Cielo();
-        GestorDeRisco gestorDeRisco = new FControl();
-        pagamento = new Pagamento(operadora, gestorDeRisco);
+       ModuloPagamentoFactory moduloPagamentoFactory = new PagSeguroModuloPagamentoFactory();
+        pagamento = new Pagamento(moduloPagamentoFactory);
     }
 
     @Test
